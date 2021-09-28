@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".CodeContentActivity">
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:background="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/circle2"
+        android:layout_below="@id/img1"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scanning Results | Code Content"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Traveller code: "
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/tvcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#0E2CD6"
+                android:textSize="10dp"
+                android:paddingLeft="8dp"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:paddingTop="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NID / Passport:"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/tvnid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#0E2CD6"
+
+                android:paddingLeft="8dp"
+                />
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:paddingTop="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Names"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/tvnames"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#0E2CD6"
+                android:paddingLeft="8dp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+<Button
+    android:id="@+id/btnrescan"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/circl"
+    android:text="Re-scan QR Code"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="20dp"
+    />
+
+
+    <Button
+        android:id="@+id/btnproceed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circl"
+        android:text="Proceed"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        />
+
+</RelativeLayout>

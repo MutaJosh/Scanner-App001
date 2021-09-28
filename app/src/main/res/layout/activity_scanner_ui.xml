@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".ScannerUI">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:text="Scan the Traveller QR Code"
+
+        android:id="@+id/idi"
+        />
+
+    <FrameLayout
+        android:padding="20dp"
+        android:layout_above="@id/idia"
+        android:layout_below="@id/idi"
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/idia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:padding="35dp"
+        android:text="Point the camera to the Traveler's QR Code
+             it will scan immediately"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

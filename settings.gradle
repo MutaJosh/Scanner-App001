@@ -1,0 +1,2 @@
+rootProject.name = "RECDTS QR code scanner"
+include ':app'
