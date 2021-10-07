@@ -3,18 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="app/src/main/res/layout/activity_code_content.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.125" />
-        <entry key="app/src/main/res/layout/activity_result.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_scanner_ui.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.1" />
+        <entry key="..\:/Workspace/Scanner-App001/app/src/main/res/drawable/circl.xml" value="0.3880208333333333" />
+        <entry key="..\:/Workspace/Scanner-App001/app/src/main/res/layout/activity_code_content.xml" value="0.33" />
+        <entry key="..\:/Workspace/Scanner-App001/app/src/main/res/layout/activity_main.xml" value="0.371875" />
+        <entry key="..\:/Workspace/Scanner-App001/app/src/main/res/layout/activity_result.xml" value="0.371875" />
+        <entry key="..\:/Workspace/Scanner-App001/app/src/main/res/layout/activity_scanner_ui.xml" value="0.371875" />
+        <entry key="..\:/Workspace/Scanner-App001/app/src/main/res/layout/activity_splash.xml" value="0.33" />
       </map>
     </option>
   </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
-    <output url="file://$PROJECT_DIR$/build/classes" />
-  </component>
-  <component name="ProjectType">
-    <option name="id" value="Android" />
+    <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>

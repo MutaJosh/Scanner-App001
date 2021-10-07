@@ -7,134 +7,137 @@
     android:padding="10dp"
     tools:context=".CodeContentActivity">
 
+
     <ImageView
         android:id="@+id/img1"
         android:layout_width="120dp"
         android:layout_height="100dp"
+        android:layout_marginTop="50dp"
         android:background="@drawable/logo"
         android:layout_centerHorizontal="true"
+
+
         />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:background="@drawable/circle2"
         android:layout_below="@id/img1"
-        android:padding="10dp"
-        android:layout_marginTop="20dp"
-        >
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/circle2"
+        android:orientation="vertical"
+
+        android:padding="10dp">
+
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Scanning Results | Code Content"
-            android:textStyle="bold"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="20dp"
-            />
-
+            android:text="Scanning Results | Code Content"
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            >
+            android:orientation="horizontal">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Traveller code: "
-                android:textStyle="bold"
-                />
+                android:text="Traveller code "
+                android:textStyle="normal|bold" />
 
             <TextView
                 android:id="@+id/tvcode"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="432432OIO-343O-KOI43-IUI234"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="30dp"
                 android:textColor="#0E2CD6"
-                android:textSize="10dp"
-                android:paddingLeft="8dp"
-                />
+                android:textSize="16sp" />
 
         </LinearLayout>
 
 
         <LinearLayout
-            android:paddingTop="7dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            >
+            android:paddingTop="7dp">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="NID / Passport:"
-                android:textStyle="bold"
-                />
+                android:text="NID / Passport"
+                android:textStyle="normal|bold" />
 
             <TextView
                 android:id="@+id/tvnid"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="119956732187493"
                 android:textColor="#0E2CD6"
-
-                android:paddingLeft="8dp"
-                />
+                android:textSize="16sp" />
 
         </LinearLayout>
 
 
-
-
         <LinearLayout
-            android:paddingTop="7dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
+            android:paddingTop="7dp"
 
             >
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Names"
-                android:textStyle="bold"
-                />
+                android:textStyle="normal|bold" />
 
             <TextView
                 android:id="@+id/tvnames"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="55dp"
+                android:text="Josue Mutabazi"
                 android:textColor="#0E2CD6"
-                android:paddingLeft="8dp"
-                />
+                android:textSize="16sp" />
 
         </LinearLayout>
 
     </LinearLayout>
 
 
-<Button
-    android:id="@+id/btnrescan"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:background="@drawable/circl"
-    android:text="Re-scan QR Code"
-    android:layout_alignParentBottom="true"
-    android:layout_marginBottom="20dp"
-    />
-
+    <Button
+        android:id="@+id/btnrescan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="129dp"
+        android:background="@drawable/circl"
+        android:text="Scan Code"
+        android:textSize="12sp" />
 
     <Button
         android:id="@+id/btnproceed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="49dp"
+        android:layout_marginBottom="129dp"
         android:background="@drawable/circl"
         android:text="Proceed"
-        android:layout_alignParentBottom="true"
-        android:paddingLeft="30dp"
-        android:paddingRight="30dp"
-        android:layout_alignParentRight="true"
-        android:layout_marginBottom="20dp"
-        />
+        android:textSize="12sp" />
 
 </RelativeLayout>

@@ -6,24 +6,24 @@
     android:layout_height="match_parent"
     tools:context=".SplashActivity">
 
-<ImageView
-    android:layout_width="170dp"
-    android:layout_height="170dp"
-    android:layout_centerInParent="true"
-    android:background="@drawable/logo"
-    android:id="@+id/iff"
-    />
 
+    <ImageView
+        android:id="@+id/iff"
+        android:layout_width="117dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/logo" />
 
     <TextView
-        android:paddingTop="35dp"
-        android:layout_below="@id/iff"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="EACPass Scanner "
+        android:layout_below="@id/iff"
         android:layout_centerInParent="true"
-        android:textStyle="bold"
+        android:layout_marginTop="144dp"
+        android:paddingTop="35dp"
+        android:text="@string/app_name"
         android:textSize="20sp"
-        />
+        android:textStyle="bold" />
 
 </RelativeLayout>
