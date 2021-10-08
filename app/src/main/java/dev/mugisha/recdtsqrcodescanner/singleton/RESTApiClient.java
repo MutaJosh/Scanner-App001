@@ -7,7 +7,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class RESTApiClient {
 
-    private static final String BASE_URL = "https://eportal.hmis.moh.gov.rw/";
+    private static final String BASE_URL = "https://eportal.hmis.moh.gov.rw";
     private static RESTApiClient apiClient;
     private static Retrofit retrofit;
 

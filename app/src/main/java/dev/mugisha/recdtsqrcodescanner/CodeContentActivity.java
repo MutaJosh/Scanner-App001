@@ -120,7 +120,7 @@ startActivity(ii);
                         progressDialog.dismiss();
                     } else {
                         progressDialog.dismiss();
-                        Toast.makeText(CodeContentActivity.this, "error occured", Toast.LENGTH_LONG).show();
+                        Toast.makeText(CodeContentActivity.this, "An error occured", Toast.LENGTH_LONG).show();
                     }
 
                 } catch (IOException e) {
@@ -139,7 +139,7 @@ startActivity(ii);
             public void onFailure(Call<ResponseBody> call, Throwable t) {
                 progressDialog.dismiss();
                 //failure
-                Toast.makeText(CodeContentActivity.this, "Failed plz" + t.getLocalizedMessage(), Toast.LENGTH_LONG).show();
+                Toast.makeText(CodeContentActivity.this, "Something went wrong. Error: " + t.getLocalizedMessage(), Toast.LENGTH_LONG).show();
 
             }
         });
