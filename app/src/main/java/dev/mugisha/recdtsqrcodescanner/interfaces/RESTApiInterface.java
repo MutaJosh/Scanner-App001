@@ -11,11 +11,7 @@ import retrofit2.http.POST;
 public interface RESTApiInterface {
 
     // driver endpoint
-    @POST("driver_endpoint")
+    @POST("traveler_check_endpoint")
     Call<ResponseBody> senddata(@Body Map<String, String> obj);
-
-
-
-
 
 }
