@@ -56,7 +56,6 @@
                 android:id="@+id/tvcode"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="432432OIO-343O-KOI43-IUI234"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="30dp"
                 android:textColor="#0E2CD6"
@@ -82,7 +81,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                android:text="119956732187493"
                 android:textColor="#0E2CD6"
                 android:textSize="16sp" />
 
@@ -108,7 +106,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="55dp"
-                android:text="Josue Mutabazi"
                 android:textColor="#0E2CD6"
                 android:textSize="16sp" />
 

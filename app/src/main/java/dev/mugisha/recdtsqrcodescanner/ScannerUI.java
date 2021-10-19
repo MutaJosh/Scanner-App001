@@ -17,8 +17,15 @@ import android.widget.Toast;
 
 import com.google.zxing.Result;
 
+import dev.mugisha.recdtsqrcodescanner.interfaces.RESTApiInterface;
+import dev.mugisha.recdtsqrcodescanner.model.Driver;
 import me.dm7.barcodescanner.zbar.ZBarScannerView;
 import me.dm7.barcodescanner.zxing.ZXingScannerView;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
 
 
 public class ScannerUI extends AppCompatActivity implements ZXingScannerView.ResultHandler {
@@ -98,29 +105,50 @@ public class ScannerUI extends AppCompatActivity implements ZXingScannerView.Res
     public void handleResult(Result result) {
 
 
-        String u[]=result.getText().split(";",100);
+        String u[] = result.getText().split(";", 100);
+        String test = result.getText().substring(0, 3);
+        if (test.equals("EAC")) {
 
-         id=u[4];
-         names= u[3];
-         code = u[1].substring(11,46);
+            id = u[4];
+            names = u[3];
+            code = u[1].substring(11, 46);
 
-        // * Wait 3 seconds to resume the preview.
-        Handler handler = new Handler();
-        handler.postDelayed(new Runnable() {
-            @Override
-            public void run() {
-            //    mScannerView.resumeCameraPreview(ScannerUI.this);
-
-                Intent i= new Intent(ScannerUI.this,CodeContentActivity.class);
-              i.putExtra("code",code);
-              i.putExtra("names",names);
-              i.putExtra("nid",id);
-            startActivity(i);
-              // Toast.makeText(ScannerUI.this, "content"+code+"\n"+id, Toast.LENGTH_SHORT).show();
+            //Toast.makeText(getBaseContext(), "data is\n" + test, Toast.LENGTH_LONG).show();
 
 
-            }
-        }, 1000);
+            // * Wait 1 seconds to resume the preview.
+            Handler handler = new Handler();
+            handler.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    //    mScannerView.resumeCameraPreview(ScannerUI.this);
+
+                    Intent i = new Intent(ScannerUI.this, CodeContentActivity.class);
+                    i.putExtra("code", code);
+                    i.putExtra("names", names);
+                    i.putExtra("nid", id);
+                    startActivity(i);
+                    //finish();
+                }
+            }, 1000);
+
+        } else{
+
+            // * Wait 1 seconds to resume the preview.
+            Handler handler2 = new Handler();
+            handler2.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    //    mScannerView.resumeCameraPreview(ScannerUI.this);
+
+                    startActivity(new Intent(ScannerUI.this,ScannerUI.class));
+                    finish();
+                }
+            }, 1000);
+        Toast.makeText(ScannerUI.this, "Invalid QR code,Please scanner the real code", Toast.LENGTH_LONG).show();
+    }
+
 
     }
+
 }
