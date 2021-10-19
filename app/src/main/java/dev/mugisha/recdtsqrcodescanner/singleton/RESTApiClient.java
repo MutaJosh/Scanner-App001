@@ -1,13 +1,12 @@
 package dev.mugisha.recdtsqrcodescanner.singleton;
 
-
 import dev.mugisha.recdtsqrcodescanner.interfaces.RESTApiInterface;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class RESTApiClient {
 
-    private static final String BASE_URL = "https://eportal.hmis.moh.gov.rw";
+    private static final String BASE_URL = "https://eportal.hmis.moh.gov.rw/";
     private static RESTApiClient apiClient;
     private static Retrofit retrofit;
 
@@ -25,4 +24,5 @@ public class RESTApiClient {
     public RESTApiInterface getApi() {
         return retrofit.create(RESTApiInterface.class);
     }
+
 }
