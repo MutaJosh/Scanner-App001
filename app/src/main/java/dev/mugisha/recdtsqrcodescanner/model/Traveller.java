@@ -1,16 +1,14 @@
 package dev.mugisha.recdtsqrcodescanner.model;
 
-import com.google.gson.annotations.SerializedName;
-
-public class Driver {
+public class Traveller {
 
     private String code;
-private String NID;
+    private String NID;
 
-    public Driver() {
+    public Traveller() {
     }
 
-    public Driver(String code, String NID) {
+    public Traveller(String code, String NID) {
         this.code = code;
         this.NID = NID;
     }
