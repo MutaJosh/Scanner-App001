@@ -17,11 +17,11 @@
         android:background="@drawable/logo" />
 
     <LinearLayout
-        android:layout_width="331dp"
-        android:layout_height="189dp"
+        android:layout_width="329dp"
+        android:layout_height="276dp"
         android:layout_below="@id/img1"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="61dp"
+        android:layout_marginTop="47dp"
         android:layout_marginRight="30dp"
         android:background="@drawable/circle2"
         android:orientation="vertical">
@@ -31,17 +31,19 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
-            android:text="COVID-19 Test Status"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="sans-serif-black"
+            android:text="COVID-19 Testing Status | Rwanda"
             android:textAlignment="center"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/tvresults"
-            android:layout_width="242dp"
-            android:layout_height="wrap_content"
+            android:layout_width="256dp"
+            android:layout_height="206dp"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="25dp"
-            android:padding="15dp"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
             android:text="The traveler doesn' exist. Please, ...."
             android:textColor="#092BE6"
             android:textSize="16sp"

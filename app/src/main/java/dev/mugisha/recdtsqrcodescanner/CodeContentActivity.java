@@ -153,7 +153,7 @@ public class CodeContentActivity extends AppCompatActivity implements View.OnCli
 
                 }else{
                     progressDialog.dismiss();
-                    Toast.makeText(getBaseContext(), "error ", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getBaseContext(), "Something went wrong. Please, contact the system administrators.", Toast.LENGTH_SHORT).show();
                 }
             }
             @Override

@@ -49,14 +49,14 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Traveller code "
+                android:text="Traveler's ID"
                 android:textStyle="normal|bold" />
 
             <TextView
                 android:id="@+id/tvcode"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
+                android:layout_marginLeft="15dp"
                 android:layout_marginRight="30dp"
                 android:textColor="#0E2CD6"
                 android:textSize="16sp" />
@@ -73,7 +73,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="NID / Passport"
+                android:text="NID/Passport"
                 android:textStyle="normal|bold" />
 
             <TextView
@@ -105,7 +105,7 @@
                 android:id="@+id/tvnames"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="55dp"
+                android:layout_marginLeft="50dp"
                 android:textColor="#0E2CD6"
                 android:textSize="16sp" />
 
